@@ -11,11 +11,12 @@ public class Server {
 		String req;
 		String res;
 
-		System.out.println("waite for client");
+		System.out.println("Waite for client request!");
 		
 		ServerSocket newsoc= new ServerSocket(9806);
 		
 		while (true){
+			//accept client request
 			Socket con=newsoc.accept();
 			
 			System.out.println("connected!");
